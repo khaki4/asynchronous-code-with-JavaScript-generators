@@ -1,15 +1,8 @@
-function* createLogger() {
-    console.log('Start');
-    yield;
-    console.log('Second block');
-    yield;
-    console.log('Third block');
-    yield;
-    console.log('End');
+function* createHello() {
+    const word = yield;
+    console.log(word);
 }
 
-const logger = createLogger();
-logger.next();
-logger.next();
-logger.next();
-logger.next();
+const hello = createHello();
+console.log(hello.next());
+console.log(hello.next('Max'));
