@@ -36,7 +36,7 @@ logger.next(); // End
 ```
 ---
 
-## Send Message by argument of nex();
+## Send Message by argument of next();
 - the first call of next executes from the start of the function until the first yield statement
 ```javascript 
 function* createHello() {
@@ -54,7 +54,7 @@ console.log(hello.next('Max'));
 ```
 ---
 
-# what is yield
+### what is yield
 ```javascript 
 
 function* createHello() {
