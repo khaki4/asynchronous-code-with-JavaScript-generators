@@ -7,6 +7,9 @@ function* createQuoteFetcher() {
   return `${quote.quoteText} —${quote.quoteAuthor}`
 }
 
+const quoteFetcher = co(createQuoteFetcher)
+quoteFetcher.then(quote => console.log(quote))
+
 // replace by Module co
 // const coroutine = (gen) => {
 //   const generator = gen()
@@ -19,7 +22,3 @@ function* createQuoteFetcher() {
 
 //   return handle(generator.next())
 // }
-
-const quoteFetcher = co(createQuoteFetcher)
-quoteFetcher.then(quote => console.log(quote))
-
