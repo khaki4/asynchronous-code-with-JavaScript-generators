@@ -1,7 +1,5 @@
 # asynchronous-code-with-JavaScript-generators
 Write simple asynchronous code with JavaScript generators
-# asynchronous-code-with-JavaScript-generators
-Write simple asynchronous code with JavaScript generators
 
 # Description
 Generators are functions which can be exited and later re-entered. Their context (variable bindings) will be saved across re-entrances.
@@ -14,7 +12,7 @@ Generator 는 빠져나갔다가 나중에 다시 돌아올 수 있는 함수입
 
 Generator function 은 호출하더라도 함수가 즉시 실행되지 않습니다. 대신 함수를 위한 iterator object 가 리턴됩니다. iterator의 next() 메서드가 호출되면, generator 함수가 실행되고 첫 번째 yield expression 을 만날 때까지 진행됩니다. 그리고 해당 yield expression 이 가리키는 값이 iterator 로부터 리턴됩니다. 만약 실행 도중 yield* expression 을 만나면 다른 generator 함수로 진행이 넘어가게 됩니다. 이후 next() 메서드가 호출되면 진행이 멈췄던 부분에서부터 다시 실행됩니다. next() 메서드는 객체를 리턴하는데, 이 객체에는 yield expression 이 가리키던 값(yielded value)을 나타내는 value 속성과, generator 함수 안의 모든 yield expression이 실행되었는지를 나타내는 boolean 타입의 done 속성이 포함됩니다.next() 메서드를 인자 값과 함께 호출 하게 되면  진행이 멈췄던 부분의 yield 문을  next() 메서드에서 받은 인자값 으로 치환 하고 그 부분 부터 다시 실행 하게 됩니다.
 
-# [https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*] function*
+# [function*](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/function*)
 ---
 
 ## Basic Usage
