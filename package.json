@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "co": "^4.6.0",
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "requirejs": "^2.3.3"
+  }
+}
